@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "pdas"
+  labels:
+    type: "frontend"
+spec:
+  containers:
+    - name: "pdas"
+      image: "gcr.io/mythical-bazaar-341121/react/pdas:v1"
+      imagePullPolicy: "IfNotPresent"
+      ports:
+        - containerPort: 3000
+      resources:
+        limits:
+          memory: "512Mi"
+          cpu: 0.5
+        requests:
+          memory: "256Mi"
+          cpu: 0.2
+    
