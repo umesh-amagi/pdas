@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
     - name: "pdas"
-      image: "gcr.io/mythical-bazaar-341121/react/pdas:v1"
+      image: "gcr.io/mythical-bazaar-341121/react/pdas"
       imagePullPolicy: "IfNotPresent"
       ports:
         - containerPort: 3000
